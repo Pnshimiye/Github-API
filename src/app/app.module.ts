@@ -8,13 +8,14 @@ import { UserComponent } from './user/user.component';
 import { APIComponent } from './api/api.component';
 import { RepoFormComponent } from './repo-form/repo-form.component';
 import { UserFoemComponent } from './user-foem/user-foem.component';
+import {HttpClientModule} from '@angular/common/http';
  
 
 @NgModule({
   declarations: [
      AppComponent,
      UserComponent,
-    // // ReposComponent,
+    // ReposComponent,
     APIComponent,
     RepoFormComponent,
     UserFoemComponent,
@@ -22,7 +23,8 @@ import { UserFoemComponent } from './user-foem/user-foem.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
