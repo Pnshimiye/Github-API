@@ -8,7 +8,7 @@ import { UserComponent } from './user/user.component';
 import { APIComponent } from './api/api.component';
 import { RepoFormComponent } from './repo-form/repo-form.component';
 import { UserFoemComponent } from './user-foem/user-foem.component';
-import {HttpClientModule} from '@angular/common/http'
+ 
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {HttpClientModule} from '@angular/common/http'
     APIComponent,
     RepoFormComponent,
     UserFoemComponent,
-    HttpClientModule
+ 
   ],
   imports: [
     BrowserModule,
