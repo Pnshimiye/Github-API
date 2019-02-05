@@ -7,8 +7,14 @@ import { UserComponent } from './user/user.component';
 // import { ReposComponent } from './repos/repos.component';
 import { APIComponent } from './api/api.component';
 import { RepoFormComponent } from './repo-form/repo-form.component';
-import { UserFoemComponent } from './user-foem/user-foem.component';
+import { UserFormComponent } from './user-form/user-form.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule} from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
+import { RepoComponent } from './repo/repo.component';
+
+
  
 
 @NgModule({
@@ -18,13 +24,17 @@ import {HttpClientModule} from '@angular/common/http';
     // ReposComponent,
     APIComponent,
     RepoFormComponent,
-    UserFoemComponent,
+    UserFormComponent,
+    HighlightDirective,
+    RepoComponent,
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 
-export class user {
-  constructor(public login:string,public followers:string, public following:string,public public_repos:string,public repos_url:string,public location:string){}
+export class User {
+  constructor(public login:string,public followers:number, public following:number,public public_repos:number,public html_url:string,public location:string,public avatar_url:string){}
 }
+

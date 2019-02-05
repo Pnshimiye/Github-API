@@ -1,0 +1,24 @@
+.container{
+  background-color: rgb(63, 62, 62);
+  color: rgb(205, 206, 203);
+  padding:40px;
+  border-radius: 10px;
+  border:3px;
+  box-shadow:20px,10px,20px rgb(107, 106, 106);
+  height:100%;
+  width:100%;
+  text-align:center;
+ 
+}
+#title{
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bolder;
+}
+#intro{
+  font-style:italic;
+  font-family: Impact, Haettenschweiler;
+  text-decoration: aliceblue
+}
+/* body{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13QZpn4Lla8_Img8fApwir8JMl_KXMwOKB8V4OaLX-shQPyKKjA")
+} */

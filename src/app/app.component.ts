@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "YOUR TUNEL TO GITHUB";
+  title = "YOUR TUNNEL TO GITHUB";
 }

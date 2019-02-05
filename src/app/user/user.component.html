@@ -1,2 +1,16 @@
+<div style="align-items: center">
+<p><img src='{{user.avatar_url}}'></p>
+<p appHighlight><strong>Username: </strong> {{user.login}}</p> 
+<p ><strong>Followers: </strong>{{user.followers}}</p>
+<p><strong>Following: </strong>{{user.following}}</p>
+<p><strong>Number of Repositories:</strong> {{user.public_repos}}</p>
+<p><strong>Link to Repositories: </strong> <a href='{{user.html_url}}' target="blank"><em>Repositories</em></a></p>
+<p><strong>Location: </strong>{{user.location}}</p>
 
- 
+</div>
+
+<input class="input-field" type="text" placeholder="Username" [(ngModel)]="loginName">
+ <button (click)= "submitInput()">Search</button>
+
+<!-- <app-user-form></app-user-form> -->
+
