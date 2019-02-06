@@ -11,12 +11,12 @@ import { environment } from 'src/environments/environment';
 export class apiRequestService {
 
    user:User;
-   repo:Repo;
+   
 
      
     constructor(private http:HttpClient) { 
       this.user= new User("",0 ,0 ,0 ,"","","");
-      this.repo= new Repo('','');
+
 //     
     }
 //     constructor(private http:HttpClient) { 
