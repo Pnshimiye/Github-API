@@ -6,20 +6,32 @@ import {apiRequestService} from '../api-http/api-request.service'
 
 
 
-@Component({
-  selector: 'app-repo',
-  templateUrl: './repo.component.html',
-  styleUrls: ['./repo.component.css'],
-  providers:[apiRequestService],
-})
-export class RepoComponent implements OnInit {
+// @Component({
+//   selector: 'app-repo',
+//   templateUrl: './repo.component.html',
+//   styleUrls: ['./repo.component.css'],
+//   providers:[apiRequestService],
+// })
+// // // export class RepoComponent implements OnInit {
 
-  repo:Repo
-  repoSearch=''
+// //   repo:Repo
+// //   repoSearch=''
 
-  constructor(private apiService:apiRequestService) { }
+// //   constructor(private apiService:apiRequestService) {
+// //   }
+// //   submitRepo() {
+// //     // return this.loginName
+// //     this.apiService.apiRequest(this.repoSearch,this.repoSearch);
+   
+// //    }
 
-  ngOnInit() {
-  }
 
-}
+
+
+
+// //   ngOnInit() {
+// //     this.repo = this.apiService.repo
+// //     this.apiService.apiRequest("",'');
+//   }
+// }  
+ 

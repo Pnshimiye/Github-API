@@ -3,23 +3,30 @@ import {HttpClient} from '@angular/common/http'
 import {User} from '../users';
 import {Repo}from '../repos'
 import { environment } from 'src/environments/environment';
+// import { runInThisContext } from 'vm';
 // import {environment} from 'src/environments/environment';
 
 
 @Injectable()
 export class apiRequestService {
 
-    user:User;
-   
+   user:User;
+   repo:Repo;
 
      
     constructor(private http:HttpClient) { 
       this.user= new User("",0 ,0 ,0 ,"","","");
+      this.repo= new Repo('','');
+//     
     }
+//     constructor(private http:HttpClient) { 
+//  this.repo= new Repo('','');
+//     }
    
     
     apiRequest(loginName){
       var userInput= loginName;
+      // var repository= repoSearch;
    
       interface ApiResponse{
         login:string;
@@ -30,7 +37,9 @@ export class apiRequestService {
         location:string;
         avatar_url:string;
 
-      }
+      } 
+     
+
       let promise =new Promise((resolve,reject)=>{
         
         this.http.get<ApiResponse>('https://api.github.com/users/'+ userInput).toPromise().then(response=>{

@@ -12,7 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
-import { RepoComponent } from './repo/repo.component';
+// import { RepoComponent } from './repo/repo.component';
 
 
  
@@ -26,7 +26,7 @@ import { RepoComponent } from './repo/repo.component';
     RepoFormComponent,
     UserFormComponent,
     HighlightDirective,
-    RepoComponent,
+    // RepoComponent,
  
   ],
   imports: [
