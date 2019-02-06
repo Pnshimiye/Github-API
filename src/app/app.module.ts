@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 // import { RepoComponent } from './repo/repo.component';
 
 
@@ -26,6 +27,7 @@ import { HighlightDirective } from './highlight.directive';
     RepoFormComponent,
     UserFormComponent,
     HighlightDirective,
+    DateCountPipe,
     // RepoComponent,
  
   ],
